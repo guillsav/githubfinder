@@ -1,5 +1,6 @@
 import React from "react"
 import PropTypes from "prop-types"
+import { NavLink } from "react-router-dom"
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 
@@ -10,6 +11,10 @@ const Navbar = ({ icon, title }) => {
         <FontAwesomeIcon icon={icon} style={{ marginRight: "5px" }} />
         {title}
       </h1>
+      <ul>
+        <NavLink to="/">Home</NavLink>
+        <NavLink to="/about">About</NavLink>
+      </ul>
     </nav>
   )
 }
